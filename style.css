@@ -1,0 +1,185 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(48,69,84,1) 79%);    
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header,
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: whitesmoke;
+}
+
+form button{
+    color:orange;
+    background: whitesmoke;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: orange;
+    color: whitesmoke;
+} 
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.rate-list{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: whitesmoke;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 2rem;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.prod-btn{
+    background-color: rgb(51, 204, 204);
+    color: whitesmoke;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    max-height: 2rem;
+}
+
+.prod-btn:hover{
+    background-color: whitesmoke;
+    color: rgb(51, 204, 204);   
+}
+
+.trash-btn{
+    background-color: red;
+    color: whitesmoke;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    max-height: 2rem;
+}
+.trash-btn:hover{
+    background-color: whitesmoke;
+    color: red;    
+}
+.completed-btn{
+    background-color: yellowgreen;
+    color: whitesmoke;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    max-height: 2rem;
+}
+.completed-btn:hover{
+    background-color: whitesmoke;
+    color: yellowgreen;    
+}
+
+.rate-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    max-height: 2rem;
+    text-decoration: none;
+}
+
+/* .rate-btn:active{
+    background-color: hotpink;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    max-height: 2rem;
+}
+.rate-btn:focus{
+    background-color: hotpink;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    max-height: 2rem;
+} */
+
+.rated{
+    background-color: hotpink;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    max-height: 2rem;
+}
+
+.todo-item{
+    margin: 0.5rem;
+    padding: 0.5rem, 0.5rem; 
+}
+
+.fa-trash-alt,
+.fa-check,
+.fa-meh,
+.fa-smile,
+.fa-frown,
+.fa-comment{
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+    background: none;
+    color: whitesmoke;
+}
+
