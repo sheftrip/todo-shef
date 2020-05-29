@@ -133,25 +133,6 @@ form button:hover{
     text-decoration: none;
 }
 
-/* .rate-btn:active{
-    background-color: hotpink;
-    color: white;
-    border: none;
-    padding: 0.5rem;
-    cursor: pointer;
-    font-size: 1rem;
-    max-height: 2rem;
-}
-.rate-btn:focus{
-    background-color: hotpink;
-    color: white;
-    border: none;
-    padding: 0.5rem;
-    cursor: pointer;
-    font-size: 1rem;
-    max-height: 2rem;
-} */
-
 .rated{
     background-color: hotpink;
     color: white;
@@ -183,3 +164,38 @@ form button:hover{
     color: whitesmoke;
 }
 
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    color:rgba(48,69,84,1);
+    width: 10rem;
+    cursor: pointer;
+    padding-left: 0.5rem;
+    height: 1.5rem;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: darkslateblue;
+    color: white;
+    top:0;
+    right:0;
+    padding: 0.4rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+    pointer-events: none;
+}
+
+.select:hover::after{
+    background: rgb(48, 40, 94);
+}
